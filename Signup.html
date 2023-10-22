@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Signup.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+    html, body{
+    margin:0;
+    padding:0;
+    background-image: url("https://cdn.dribbble.com/users/1783374/screenshots/10100442/cute-loading.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container{
+
+    margin: auto;
+    margin-top: 200px;/* Center the container horizontally */
+    padding: 10px;/* add margin-to for vertical centering */
+    background-color:transparent;
+    color:rgb(107, 217, 236);
+    box-shadow:10px 5px 10px 10px;
+    width: 400px;
+    height: 350px;/* adjust the container height automatically */
+    position: relative;/* position relative for centering */
+    top:50%;/* Move the container up by 50% of its height */
+    transform: translateY(-50%); /* adjust for the height of the container */
+
+}
+
+.input-ico{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.input-ico:last-child{
+    margin-bottom: 0px;
+
+}
+
+.input-ico > input[type="text"], .input-ico > input[type="password"]{
+    outline: 2px;
+    border: none;
+    text-align:center;
+    padding: 15px;
+    border: 1px solid rgb(10, 2, 9);
+    border-radius:32px;
+    width: 100%;
+    background-color:white;
+}
+
+.button input[type="submit"]{
+    border:none;
+    border-radius: 32px;
+    outline: none;
+    width: 20%;
+    margin: 0 auto;
+    font-size: 105%;
+    padding: 10px;
+    color: rgb(3, 13, 3);
+    background-color: rgb(64, 226, 40);
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+.button{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.button input[type="submit"]:hover{
+    background-color: rgb(20, 233, 20);
+}
+    </style>
+</head>
+<body>
+    <form action="login.html">
+            <h2 style="text-align: center; font-size: 45px; color: rgb(12, 8, 16);"> Sign Up</h2>
+        <div class="form-container">
+
+            <div class="input-ico">
+                <input type="text" placeholder="Enter your full name">
+            </div>
+        
+                <div class="input-ico">    
+                    <input type="text" placeholder="Enter user name">
+            </div>
+        
+                <div class="input-ico">
+                <input type ="text" placeholder="Enter your email">
+            </div>
+        
+                <div class="input-ico">
+                <input type="password" placeholder="Enter your password">
+            </div>
+        
+            <div class="button">
+                <input type="submit" value="sign up">
+            </div>
+            </form>
+        </div>
+        </body>
+        </html>
